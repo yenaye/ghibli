@@ -1,0 +1,95 @@
+body{margin: 0px;}
+
+.down-icon, .up-icon{color: #ffffff; font-size: 90px; cursor: pointer; position: absolute; text-shadow: 7px 0 0 #1d6389, 13px 0 0 #13425b; animation-duration: 0.55s; animation-iteration-count: infinite; animation-direction: alternate;}
+.down-icon{bottom: 5%; left: 5%; animation-name: moveDownIcon;}
+@keyframes moveDownIcon {
+    from{margin-bottom: 0;}
+    to{margin-bottom: 10px;}
+}
+.up-icon{top: 5%; right: 5%; animation-name: moveUpIcon;}
+@keyframes moveUpIcon {
+    from{margin-top: 0;}
+    to{margin-top: 10px;}
+}
+
+#logo-div{background-color: #2b8fc3;}
+#logo-div .logo-title{text-align: center; display: none; position: absolute; top: 50%; left: 42%; background: linear-gradient(to right, #ffffff, #b7cfd9); -webkit-background-clip: text; -webkit-text-fill-color: transparent;}
+#logo-div .logo-title .jp{font-size: 80px; font-weight: bolder; letter-spacing: -18px;}
+#logo-div .logo-title .en{font-size: 60px;}
+#logo-div .logo-title hr{margin: 0;}
+#logo-div .logo-img{max-height: 600px; height: 70%; float: right; margin: 10% 8% 0 0;}
+
+#contents01{background: linear-gradient(#030c0d, #112145); overflow: hidden;}
+#contents01 .title-group{float: right; font-weight: bolder; margin: 5% 18% 0 0; display: none;}
+#contents01 .title-group .top-title{text-align: right; background: linear-gradient(#d9d6cc, #94547f); -webkit-background-clip: text; -webkit-text-fill-color: transparent;}
+#contents01 .title-group .top-title .title{font-size: 80px;}
+#contents01 .title-group .top-title .sub-title{font-size:30px;}
+#contents01 .title-group .date-title{text-align: center; font-size: 15px; font-weight: normal; color: #bbbbbb;}
+#contents01 .img-div{position:absolute; display: none; width: 40%; text-align: center; bottom: 2%; left: 10%;}
+#contents01 .img-div img{max-width: 400px; width: 90%;}
+#contents01 .img-div .fence{background: linear-gradient(#495271, rgba(0,0,0,0) 80%); border-style: solid; border-image: linear-gradient(#000000, rgba(0,0,0,0) 80%); border-image-slice: 1; border-image-width: 1px 1px 0 1px; border-bottom: 0; margin: -5px 5%; height: 300px;}
+#contents01 .shooting-star{position: absolute; background: linear-gradient(to left, #93d4f5, rgba(0,0,0,0)); transform: skew(0deg, 30deg); animation-duration: 2s; animation-iteration-count: infinite;}
+#contents01 .shooting-star .star{position: absolute; width: 100%; height: 50px; background: radial-gradient(at right, #8fd7e6, rgba(0,0,0,0) 30%); right: -3px; top: -24px; transform: skew(-20deg, 0deg); border-radius: 0 50% 50% 0;}
+#contents01 .shooting-star:nth-child(3){animation-name: shooting1;}
+#contents01 .shooting-star:nth-child(4){animation-name: shooting2; animation-delay: 1.5s;}
+#contents01 .shooting-star:nth-child(5){animation-name: shooting3; animation-delay: 1s;}
+#contents01 .shooting-star:nth-child(6){animation-name: shooting4; animation-delay: 0.5s;}
+#contents01 .shooting-star:nth-child(7){animation-name: shooting5; animation-delay: 2s;}
+@keyframes shooting1 {
+    from{left: -10%; top: -10%; height: 0px; width: 0px;}
+    to{width: 300px; height: 5px; top: 45%; left: 47%;}
+}
+@keyframes shooting2 {
+    from{left: -10%; top: -15%; height: 0px; width: 0px;}
+    to{width: 250px; height: 4px; top: 20%; left: 40%;}
+}
+@keyframes shooting3 {
+    from{left: -10%; top: 0%; height: 0px; width: 0px;}
+    to{width: 200px; height: 3.5px; top: 40%; left: 10%;}
+}
+@keyframes shooting4 {
+    from{left: -10%; top: -8%; height: 0px; width: 0px;}
+    to{width: 160px; height: 2px; top: 45%; left: 43%;}
+}
+@keyframes shooting5 {
+    from{left: -10%; top: -10%; height: 0px; width: 0px;}
+    to{width: 130px; height: 2px; top: 25%; left: 10%;}
+}
+
+#contents02{background: linear-gradient(#112145, #1f332c); overflow: hidden;}
+#contents02 .title-group{position:absolute; display: inline-block; margin: 5% 0 0 18%; font-weight: bolder; z-index: 1;}
+#contents02 .title-group .top-title{text-align: right; background: linear-gradient(#e2c1b9, #549494); -webkit-background-clip: text; -webkit-text-fill-color: transparent;}
+#contents02 .title-group .top-title .title{font-size: 80px;}
+#contents02 .title-group .top-title .sub-title{font-size:30px;}
+#contents02 .title-group .date-title{text-align: center; font-size: 15px; font-weight: normal; color: #cccccc;}
+#contents02 .cave{position: relative; background: radial-gradient(#010101 35%, #1c1818); height: 500px; width: 320px; border-radius: 120px 120px 8px 8px; transform: skew(0deg, -10deg); float: left; margin: 12.5% 0 0 45%;}
+#contents02 .cave .castle-img{position: absolute; height: 500px; width: 320px; border-radius: 120px 120px 8px 8px; filter: brightness(50%);}
+#contents02 .cave .cave-shadow{position: absolute; background: linear-gradient(#1f332c, #1c1818); height: 370px; width: 205px; border-radius: 100px 50px 0 0; transform: rotate(130deg) skew(10deg, 50deg); left: 225px; top: 412px;}
+#contents02 .cave .stonewall{position: absolute; background: #737373; height: 160px; width: 140px; border-radius: 80px / 200px 200px 20px 20px; transform: skew(0deg, 10deg); left: 340px; top: 460px; box-shadow: 15px 15px 25px 10px #999999 inset;}
+#contents02 .cave .stonewall .left-face{background: #aaaaaa; display: inline-block; margin: 10px 0 0 12px; height: 90px; width: 32px; border: 1.5px solid #888888; border-radius: 50px/100px 200px 30px 50px; transform: skew(-12deg, 0deg); box-shadow: -5px -10px 15px 2px #888888 inset, 2px 1px 1px 3px #818181, 5px -3px 2px 2px #a9a9a9;}
+#contents02 .cave .stonewall .right-face{background: #999999; display: inline-block; margin-left: 41px; height: 90px; width: 32px; border: 1.5px solid #767676; border-radius: 50px/200px 100px 50px 30px; transform: skew(12deg, 0deg); box-shadow: 5px -5px 20px 3px #767676 inset, -2px -1px 1px 2px #757575, -5px -3px 2px 2px #898989;}
+#contents02 .cave .stonewall .left-face .eye{background: radial-gradient(at 40%, #bababa 30%, #777777); height: 14px; width: 18px; border: 1px solid #888888; float: right; margin: 20px 13px 0 0; border-radius: 100px/60px 130px 2px 60px; transform: skew(10deg, 0deg); box-shadow: 3px 2px 2px 1px #888888;}
+#contents02 .cave .stonewall .right-face .eye{background: radial-gradient(at 45%, #999999 33%, #666666); height: 14px; width: 18px; border: 1px solid #777777; float: right; margin: 20px 1px 0 0; border-radius: 100px/130px 60px 60px 2px; transform: skew(-10deg, 0deg); box-shadow: 0px 2px 3px 2px #777777;}
+#contents02 .cave .stonewall .left-face .nose{background: radial-gradient(at 25%, #bababa 30%, #888888); height: 20px; width: 10px; border: 1px solid #919191; float: right; margin: -4px 31px 0 0; border-radius: 50px 8px 3px 20px; transform: skew(-3deg, 10deg); box-shadow: 1px 0px 3px 1px #919191;}
+#contents02 .cave .stonewall .right-face .nose{position: absolute; background: radial-gradient(at 40%, #999999 20%, #666666); height: 20px; width: 9px; border: 1px solid #818181;  left: 32px; top: 33px; border-radius: 8px 50px 20px 3px; transform: skew(3deg, -10deg); box-shadow: -1px 0px 3px 1px #777777;}
+#contents02 .cave .stonewall .left-hand{background: linear-gradient(to right, #bcbcbc, #666666); display: inline-block; margin: 8px 0 0 -3px; height: 20px; width: 50px; border-radius: 5px 0 40px 8px/10px 0 20px 10px; box-shadow: -3px -2px 6px 2px #787878 inset, 3px 3px 3px 2px #717171;}
+#contents02 .cave .stonewall .right-hand{background: linear-gradient(to left, #aaaaaa, #646464); display: inline-block; margin-left: 37px; height: 20px; width: 50px; border-radius: 0 5px 8px 40px/0 10px 10px 20px; box-shadow: 3px -2px 6px 2px #757575 inset, -3px 3px 3px 2px #717171;}
+#contents02 .kaonasi{position: absolute; background: linear-gradient(to bottom, #000000 45%, rgba(0,0,0,0)); height: 430px; width: 170px; border-radius: 100px 100px 20px 20px/250px 250px 300px 300px; transform: skew(0deg, 5deg); top: 80px; right: 350px; display: none;}
+#contents02 .kaonasi .mask{position: absolute; background: #dddddd; height: 135px; width: 90px; border-radius: 170px/200px 200px 350px 350px; transform: skew(0deg, 5deg); margin: 30px 0 0 45px; box-shadow: -12px 0 5px 3px #aaaaaa inset;}
+#contents02 .kaonasi .mask .top-mask > div{display: inline-block; width: 42px;}
+#contents02 .kaonasi .mask .top-mask .eye{background-color: #111111; height: 9px; width: 19px; margin: 6px 0 0 12px; border-radius: 49%;}
+#contents02 .kaonasi .mask .top-mask .shadow{background-color: #777777; height: 4px; width: 14px; margin: 3px 0 0 15px; border-radius: 45%;}
+#contents02 .kaonasi .mask .top-mask .left-mask .top-pattern{background-color: #b690c5; height: 25px; width: 13px; margin: 15px 0 0 16px; border-radius: 80px 20px 0 0/180px 180px 0 0;}
+#contents02 .kaonasi .mask .top-mask .left-mask .bottom-pattern{background-color: #b690c5; height: 25px; width: 13px; margin: 6px 0 0 16px; border-radius:0 0 20px 80px/0 0 180px 180px;}
+#contents02 .kaonasi .mask .top-mask .right-mask .top-pattern{background-color: #b690c5; height: 25px; width: 13px; margin: 15px 0 0 16px; border-radius: 20px 80px 0 0/180px 180px 0 0; box-shadow: -4px 0 3px 1px #80678a inset;}
+#contents02 .kaonasi .mask .top-mask .right-mask .bottom-pattern{background-color: #b690c5; height: 25px; width: 13px; margin: 6px 0 0 16px; border-radius:0 0 80px 20px/0 0 180px 180px; box-shadow: -2px 0 3px 0 #80678a inset;}
+#contents02 .kaonasi .mask .bottom-mask .mouth{background-color: #111111; width: 31px; height: 7px; margin: 6px 0 0 29px; border-radius: 50px 50px 150px 150px/30px 30px 50px 50px;}
+#contents02 .kaonasi .mask .bottom-mask .shadow{background-color: #777777; width: 17px; height: 4px; margin: 6px 0 0 37px; border-radius: 50px 50px 150px 150px/30px 30px 50px 50px;}
+
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    /* IE10+ CSS styles go here */
+    #logo-div .logo-title{color: #B9D0DA; background: transparent;}
+    #contents01 .title-group .top-title{color: #AE859C; background: transparent;}
+    #contents02 .title-group .top-title{color: #AFB1AC; background: transparent;}
+}
